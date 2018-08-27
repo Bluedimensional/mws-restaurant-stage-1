@@ -123,7 +123,7 @@ nav h1 a {
 .filter-options {
   width: 100%;
   /*height: 100%;*/
-  background-color: #3397DB;
+  background-color: #252831;
   align-items: center;
   text-align: center;
   /*padding: 15px;*/
@@ -182,7 +182,7 @@ nav h1 a {
   display: block;
   margin: 0 auto;
   max-width: 100%;
-  width: 70%;
+  width: 100%;
   /*min-height: 248px;*/
   /*min-width: 100%;*/
 }
@@ -255,7 +255,7 @@ nav h1 a {
   display: block;
 }
 #restaurant-address {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 15px 0px;
 }
 #restaurant-cuisine {
@@ -293,11 +293,18 @@ nav h1 a {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
-  font-size: 24pt;
+  background-color: #333;
+  color: #ddd;
+  font-size: 1.4rem;
   font-weight: 300;
-  letter-spacing: -1px;
-  padding-bottom: 1pt;
+  letter-spacing: 2px;
+  /*margin: 5px auto 15px;*/
+  padding: 20px;
+  /*text-align: center;*/
+  text-transform: uppercase;
+  width: 90%;
+  display: block;
+
 }
 #reviews-list {
   margin: 0;
@@ -305,7 +312,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+    border: 1px solid #252831
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -319,6 +326,7 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+  font-size: 1.2rem;
 }
 
 /* ========== Leaflet ============== */
@@ -329,8 +337,9 @@ nav h1 a {
 /* ========== Responsive  =========*/
 
 @media screen and (min-width: 768px) {
-  .maincontent, .maincontent-restaurant {
-    padding-top: 100px;
+  nav {
+    padding: 20px;
+    margin-bottom: 2px;
   }
 
   .maincontent {
@@ -345,18 +354,29 @@ nav h1 a {
   }
 
   #restaurant-container {
-    width: 35%;
+    width: 34%;
     min-height: calc(60vh - 160px);
+  }
+  #restaurant-name {
+    font-size: 1.1rem;
+  }
+  #restaurant-cuisine {
+    font-size: 1.3rem;
+  }
+  #restaurant-address {
+    font-size: 1rem;
+  }
+  #restaurant-hours td {
+    font-size: 1rem;
   }
 
   .maincontent-restaurant {
     flex-direction: row-reverse;
-    padding-top: 100px ;
   }
 
   .map-container {
     width: 60%;
-    padding: 20px;
+    padding: 5px;
   }
 
   #map {
@@ -388,61 +408,21 @@ nav h1 a {
 }
 
 @media screen and (min-width: 992px) {
-  .maincontent, .maincontent-restaurant {
-    padding-top: 100px;
+  #restaurant-name {
+    font-size: 1.3rem;
+  }
+  #restaurant-address {
+    font-size: 1.1rem;
   }
 
-  .maincontent {
-    flex-direction: row-reverse;
-    height: calc(100vh - 120px);
-    padding: 10px;
-  }
+}
 
-  .main-list {
-    width: 33%;
-    overflow-y: auto;
+@media screen and (min-width: 1200px) {
+  #restaurant-address {
+    font-size: 1.3rem;
   }
+  #restaurant-hours {
 
-  #restaurant-container {
-    width: 35%;
-    min-height: calc(60vh - 160px);
-  }
-
-  .maincontent-restaurant {
-    flex-direction: row-reverse;
-    padding-top: 100px ;
-  }
-
-  .map-container {
-    width: 60%;
-    padding: 20px;
-  }
-
-  #map {
-    height: 100%;
-    width: 100%;
-  }
-
-  .filter-options select {
-  background-color: white;
-  border: 1px solid #fff;
-  font-family: Arial,sans-serif;
-  font-size: 11pt;
-  height: 35px;
-  letter-spacing: 0;
-  margin: 10px auto 10px;
-  padding: 0 10px;
-  width: calc((100% - 80px)/ 2);
-  }
-  .filter-options {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 15px;
-  }
-  .filter-options h2 {
-    width: 100%;
-    display: block;
-    margin-top: 10px;
   }
 }
 
