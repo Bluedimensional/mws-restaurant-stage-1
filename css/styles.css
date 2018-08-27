@@ -45,7 +45,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 14pt;
+  font-size: 11pt;
   letter-spacing: 1px;
   padding: 5px;
   text-align: center;
@@ -174,7 +174,7 @@ nav h1 a {
   text-align: center;
   /*max-width: 450px;*/
   /*display: flex;*/
-  width: 75%;
+  width: 90%;
   /*flex-wrap: wrap;*/
 }
 #restaurants-list .restaurant-img {
@@ -349,8 +349,10 @@ nav h1 a {
   }
 
   .main-list {
-    width: 33%;
+    width: 38%;
     overflow-y: auto;
+    margin-right: 5px;
+    margin-top: 5px;
   }
 
   #restaurant-container {
