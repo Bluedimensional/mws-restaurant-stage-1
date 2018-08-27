@@ -131,10 +131,11 @@ nav h1 a {
 }
 .filter-options h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+  display: none;
 }
 .filter-options select {
   background-color: white;
@@ -145,7 +146,7 @@ nav h1 a {
   letter-spacing: 0;
   margin: 10px;
   padding: 0 10px;
-  width: 200px;
+  width: calc((100% - 15px)/ 2);
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -165,11 +166,11 @@ nav h1 a {
 }
 #restaurants-list li {
   background-color: #fff;
-  border: 1px solid #3397db;
+  border: 1px solid #252831;
   font-family: Arial,sans-serif;
   margin: 15px;
   /*min-height: 380px;*/
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   /*max-width: 450px;*/
   /*display: flex;*/
@@ -200,7 +201,7 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #252831;
   color: #fff;
   display: inline-block;
   font-size: 12pt;
@@ -224,7 +225,7 @@ nav h1 a {
   position: absolute;
   width: 100%;
 }
-#restaurant-name {
+/*#restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 20pt;
@@ -234,6 +235,19 @@ nav h1 a {
   text-transform: uppercase;
   line-height: 1.1;
   text-align: center;
+}*/
+#restaurant-name {
+  background-color: #333;
+  color: #ddd;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 5px auto 15px;
+  padding: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90%;
+  display: block;
 }
 #restaurant-img {
 	width: 90%;
@@ -247,11 +261,11 @@ nav h1 a {
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 10px;
   margin: 5px auto 15px;
-  padding: 25px 0;
+  padding: 15px 0;
   text-align: center;
   text-transform: uppercase;
 	width: 90%;
@@ -262,6 +276,12 @@ nav h1 a {
   display: block;
   margin: auto;
   width: 90%;
+}
+#restaurant-address {
+  margin-top: 20px;
+}
+#restaurant-hours {
+  margin-top: 10px;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -290,7 +310,7 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 20px;
   position: relative;
   width: 90%;
 }
@@ -325,7 +345,7 @@ nav h1 a {
   }
 
   #restaurant-container {
-    width: 30%;
+    width: 35%;
     min-height: calc(60vh - 160px);
   }
 
@@ -344,19 +364,86 @@ nav h1 a {
     width: 100%;
   }
 
+  .filter-options select {
+  background-color: white;
+  border: 1px solid #fff;
+  font-family: Arial,sans-serif;
+  font-size: 11pt;
+  height: 35px;
+  letter-spacing: 0;
+  margin: 10px auto 10px;
+  padding: 0 10px;
+  width: calc((100% - 20px)/ 2);
+  }
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+  .filter-options h2 {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .maincontent, .maincontent-restaurant {
+    padding-top: 100px;
+  }
+
+  .maincontent {
+    flex-direction: row-reverse;
+    height: calc(100vh - 120px);
+    padding: 10px;
+  }
+
+  .main-list {
+    width: 33%;
+    overflow-y: auto;
+  }
+
+  #restaurant-container {
+    width: 35%;
+    min-height: calc(60vh - 160px);
+  }
+
+  .maincontent-restaurant {
+    flex-direction: row-reverse;
+    padding-top: 100px ;
+  }
+
+  .map-container {
+    width: 60%;
+    padding: 20px;
+  }
+
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+
+  .filter-options select {
+  background-color: white;
+  border: 1px solid #fff;
+  font-family: Arial,sans-serif;
+  font-size: 11pt;
+  height: 35px;
+  letter-spacing: 0;
+  margin: 10px auto 10px;
+  padding: 0 10px;
+  width: calc((100% - 80px)/ 2);
+  }
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+  .filter-options h2 {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 
-
-
- /*Small devices (landscape phones, 576px and up)*/
-/*@media (min-width: 576px) { ... }*/
-
-/*// Medium devices (tablets, 768px and up)*/
-/*@media (min-width: 768px) { ... }*/
-
-/*// Large devices (desktops, 992px and up)*/
-/*@media (min-width: 992px) { ... }*/
-
-/*// Extra large devices (large desktops, 1200px and up)*/
-/*@media (min-width: 1200px) { ... }*/30%;
