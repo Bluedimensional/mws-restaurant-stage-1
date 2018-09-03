@@ -216,7 +216,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 if('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-    .register('/mws-restaurant-stage-1/sw-cached-site.js')
+    .register('../sw-cached-site.js')
     .then(reg => console.log('Service Worker: Registered'))
     .catch(err => console.log(`Service Worker: Error: ${err}`))
   });
